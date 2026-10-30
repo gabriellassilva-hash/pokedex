@@ -1,0 +1,8 @@
+{
+  "id": "E11",
+  "description": "Query ambígua solicita esclarecimento",
+  "type": "ambiguous_query",
+  "input": {
+    "message": "Quem ganha?"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "E04",
+  "description": "Tipo dual mantém imunidade (0x)",
+  "type": "dual_type_immunity",
+  "input": {
+    "name": "gengar"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "E08",
+  "description": "HTTP 5xx/Timeout/429 dispara retry",
+  "type": "retry_logic",
+  "input": {}
+}

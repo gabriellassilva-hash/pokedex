@@ -1,0 +1,6 @@
+{
+  "id": "E05",
+  "description": "Config A vs Config B para evolução",
+  "type": "config_ab_switch",
+  "input": {}
+}

@@ -1,0 +1,6 @@
+{
+  "id": "E09",
+  "description": "URL arbitrária fora do domínio é rejeitada",
+  "type": "domain_validation",
+  "input": {}
+}

@@ -1,0 +1,9 @@
+{
+  "id": "E01",
+  "description": "Query por nome vs ID retorna entidade idêntica",
+  "type": "cache_consistency",
+  "input": {
+    "name": "charizard",
+    "id": 6
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "E03",
+  "description": "Comparação realiza math correto e avisa sobre limitações",
+  "type": "comparison_math",
+  "input": {
+    "identifiers": [
+      "pikachu",
+      "charizard"
+    ]
+  }
+}

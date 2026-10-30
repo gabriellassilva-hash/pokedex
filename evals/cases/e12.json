@@ -1,0 +1,6 @@
+{
+  "id": "E12",
+  "description": "Requisições paralelas mantêm isolamento de sessão",
+  "type": "session_isolation",
+  "input": {}
+}

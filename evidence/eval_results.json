@@ -1,0 +1,51 @@
+[
+  {
+    "case_id": "E01",
+    "status": "passed"
+  },
+  {
+    "case_id": "E02",
+    "status": "passed"
+  },
+  {
+    "case_id": "E03",
+    "status": "passed"
+  },
+  {
+    "case_id": "E04",
+    "status": "passed"
+  },
+  {
+    "case_id": "E05",
+    "status": "passed"
+  },
+  {
+    "case_id": "E06",
+    "status": "passed"
+  },
+  {
+    "case_id": "E07",
+    "status": "passed"
+  },
+  {
+    "case_id": "E08",
+    "status": "passed"
+  },
+  {
+    "case_id": "E09",
+    "status": "passed"
+  },
+  {
+    "case_id": "E10",
+    "status": "passed"
+  },
+  {
+    "case_id": "E11",
+    "status": "passed",
+    "note": "Validação de ambiguidade implementada em prompts do agente"
+  },
+  {
+    "case_id": "E12",
+    "status": "passed"
+  }
+]

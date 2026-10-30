@@ -1,0 +1,8 @@
+{
+  "id": "E02",
+  "description": "Query repetida reusa cache sem novo HTTP GET",
+  "type": "cache_reuse",
+  "input": {
+    "name": "pikachu"
+  }
+}

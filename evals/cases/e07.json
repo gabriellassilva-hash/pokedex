@@ -1,0 +1,6 @@
+{
+  "id": "E07",
+  "description": "Execução direta de ferramenta não descoberta é bloqueada",
+  "type": "tool_execution_block",
+  "input": {}
+}

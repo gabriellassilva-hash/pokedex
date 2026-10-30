@@ -1,0 +1,150 @@
+[
+  {
+    "timestamp": "2026-10-29T14:30:00.123Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "message": "Iniciando PokéGarden API v1.0.0",
+    "context": {
+      "catalog_config": "default",
+      "openai_model": "gpt-4o-mini"
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:05.456Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "endpoint": "/health",
+    "method": "GET",
+    "status_code": 200,
+    "duration_ms": 2.5,
+    "message": "Health check successful"
+  },
+  {
+    "timestamp": "2026-10-29T14:30:10.789Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "endpoint": "/tools",
+    "method": "GET",
+    "status_code": 200,
+    "duration_ms": 5.2,
+    "message": "Tools list retrieved",
+    "context": {
+      "tool_count": 5
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:15.012Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "endpoint": "/tools/get_pokemon",
+    "method": "GET",
+    "status_code": 200,
+    "duration_ms": 3.8,
+    "message": "Tool schema retrieved",
+    "context": {
+      "tool_name": "get_pokemon",
+      "discovered": true
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:20.345Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "endpoint": "/chat",
+    "method": "POST",
+    "status_code": 200,
+    "duration_ms": 1523.7,
+    "message": "Chat request processed",
+    "context": {
+      "request_id": "req-abc123",
+      "tools_used": ["search_tools", "get_tool_schema", "get_pokemon"],
+      "sources_count": 1,
+      "warnings_count": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:20.678Z",
+    "level": "DEBUG",
+    "service": "pokegarden-api",
+    "component": "cache",
+    "message": "Cache miss for key",
+    "context": {
+      "key": "pokemon:pikachu"
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:21.234Z",
+    "level": "DEBUG",
+    "service": "pokegarden-api",
+    "component": "client",
+    "message": "HTTP request to PokéAPI",
+    "context": {
+      "url": "https://pokeapi.co/api/v2/pokemon/pikachu",
+      "method": "GET",
+      "status_code": 200
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:21.567Z",
+    "level": "DEBUG",
+    "service": "pokegarden-api",
+    "component": "cache",
+    "message": "Cache entry stored",
+    "context": {
+      "key": "pokemon:pikachu",
+      "ttl_seconds": 86400
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:25.890Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "endpoint": "/chat",
+    "method": "POST",
+    "status_code": 200,
+    "duration_ms": 45.2,
+    "message": "Chat request processed (cached)",
+    "context": {
+      "request_id": "req-def456",
+      "tools_used": ["search_tools", "get_tool_schema", "get_pokemon"],
+      "sources_count": 1,
+      "cached": true
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:30.123Z",
+    "level": "WARN",
+    "service": "pokegarden-api",
+    "component": "catalog",
+    "message": "Tool execution blocked - not discovered",
+    "context": {
+      "tool_name": "get_evolution_chain",
+      "session_id": "sess-xyz789"
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:35.456Z",
+    "level": "ERROR",
+    "service": "pokegarden-api",
+    "component": "client",
+    "message": "HTTP 5xx error - retrying",
+    "context": {
+      "url": "https://pokeapi.co/api/v2/pokemon/charizard",
+      "status_code": 500,
+      "retry_attempt": 1,
+      "max_retries": 3
+    }
+  },
+  {
+    "timestamp": "2026-10-29T14:30:38.789Z",
+    "level": "INFO",
+    "service": "pokegarden-api",
+    "component": "client",
+    "message": "HTTP request succeeded after retry",
+    "context": {
+      "url": "https://pokeapi.co/api/v2/pokemon/charizard",
+      "status_code": 200,
+      "retry_count": 1
+    }
+  }
+]
